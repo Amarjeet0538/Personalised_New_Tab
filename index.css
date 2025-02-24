@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_bar {
+  border-radius: 10px;
+  margin: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: burlywood;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 22px;
+  padding: 10px;
+}
+
+button {
+  height: 60px;
+  width: 100px;
+  margin-left: 20px;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
