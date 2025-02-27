@@ -18,21 +18,24 @@ body {
   justify-content: center;
   padding: 10px;
   background-color: burlywood;
+  border-radius: 25px;
 }
 
-input {
+.search_input {
+  border-radius: 25px;
   width: 500px;
   height: 40px;
   font-size: 22px;
   padding: 10px;
 }
 
-button {
+.search_button {
+  border-radius: 25px;
+
   height: 60px;
   width: 100px;
   margin-left: 20px;
   border: none;
   color: white;
   background-color: black;
-  border-radius: 10px;
 }
