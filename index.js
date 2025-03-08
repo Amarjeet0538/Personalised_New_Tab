@@ -59,15 +59,6 @@ searchBox.addEventListener("keypress", function (event) {
   }
 });
 
-//Calendar Logic
-var calendarEl = document.getElementById("calendar");
-
-var calendar = new FullCalendar.Calendar(calendarEl, {
-  initialView: "dayGridMonth",
-});
-
-calendar.render();
-
 //Clock Logic
 
 const clockContent = document.getElementById("digital-clock");
@@ -85,3 +76,12 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+//Calendar Logic
+// var calendarEl = document.getElementById("calendar");
+
+// var calendar = new FullCalendar.Calendar(calendarEl, {
+//   initialView: "dayGridMonth",
+// });
+
+// calendar.render();
