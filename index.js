@@ -67,21 +67,26 @@ function updateClock() {
   const now = new Date();
   let hours = now.getHours();
   let minutes = now.getMinutes();
+  let meredian = "AM";
+  if (hours > 12) {
+    hours -= 12;
+    meredian = "PM";
+  }
 
   hours = hours < 10 ? "0" + hours : hours;
   minutes = minutes < 10 ? "0" + minutes : minutes;
 
-  clockContent.textContent = `${hours}:${minutes}`;
+  clockContent.textContent = `${hours}:${minutes}  ${meredian}`;
 }
 
 setInterval(updateClock, 1000);
 updateClock();
 
-//Calendar Logic
-// var calendarEl = document.getElementById("calendar");
+// Calendar Logic
+var calendarEl = document.getElementById("calendar");
 
-// var calendar = new FullCalendar.Calendar(calendarEl, {
-//   initialView: "dayGridMonth",
-// });
+var calendar = new FullCalendar.Calendar(calendarEl, {
+  initialView: "dayGridMonth",
+});
 
-// calendar.render();
+calendar.render();
