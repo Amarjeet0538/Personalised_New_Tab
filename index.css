@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #1e1e1e;
+  background: url("./Images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -116,8 +117,9 @@ body {
   font-size: 22px;
   padding: 10px;
   width: 100%;
-  background-color: #2a2a2a;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #00100b;
+  border: none;
 }
 
 .bookmark_grid {
@@ -128,9 +130,19 @@ body {
   height: 100%;
 }
 
+#logo_img {
+  width: 50px;
+  height: 50px;
+}
+
 .notion_container {
   display: flex;
   background-color: #1e1e1e;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   margin-left: 10px;
   border-radius: 5px;
@@ -138,12 +150,15 @@ body {
   width: 25%;
 }
 
+#page_link {
+  padding: 10px;
+}
+
 #bookmark_group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 10px;
-  background: #1e1e1e;
   border-radius: 5px;
 }
 
@@ -152,12 +167,75 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  /* background: #1e1e1e; */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 a {
   color: white;
   text-decoration: none;
   padding-bottom: 10px;
+}
+
+.design {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1px;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.design #logo_img {
+  width: 32px;
+  height: 32px;
+}
+
+.design#bookmark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.design a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.typing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: 100%;
+}
+
+.typing #logo_img {
+  width: 32px;
+  height: 32px;
+}
+
+.tools#bookmark_group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.tinkercad,
+.couchPotato {
+  display: flex;
+  justify-content: center;
+}
+
+.striver_sheet #logo_img,
+.codestudio #logo_img {
+  border-radius: 50%;
 }
 
 /* Calender */
@@ -191,7 +269,7 @@ a {
 
 .fc-prev-button:hover,
 .fc-next-button:hover {
-  background: #ff7979 !important;
+  background: rgba(249, 87, 56, 0.5) !important;
 }
 
 .fc-daygrid-day {
@@ -205,7 +283,7 @@ a {
 }
 
 .fc-event {
-  background: #ffcd38 !important;
+  background: rgba(244, 211, 94, 0.8) !important;
   border-radius: 50%;
   width: 6px;
   height: 6px;
@@ -242,4 +320,21 @@ p {
   padding: 10px;
   scale: 2.5;
   color: #fff;
+}
+
+.search_clock_container,
+.bookmark_container,
+.introduction_container,
+.calendar_container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.greetings,
+#digital-clock,
+.fc-daygrid-day-number,
+.username {
+  /* color: #00100b; */
+  color: #ffffff;
 }
